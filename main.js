@@ -1,11 +1,8 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let min, val, iva, imp, pago;
-        min=Number(prompt("Ingrese el tiempo de la llamada en minutos: "));
-        val=Number(prompt("Ingrese el valor por minuto: "));
-        iva=Number(prompt("Ingrese el valor del IVA: "));
-        imp=val*iva/100;
-        pago=val+imp;
-        alert("El valor de la llamada es de : $"+pago);
+        let vel_km, vel_ms;
+        vel_km = prompt("Ingrese la velocidad del automóvil en km/h: ");
+        vel_ms = vel_km / 3.6;
+        alert("La velocidad del automóvil en m/s es: " + vel_ms);
     }, 500);
 });
