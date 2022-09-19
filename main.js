@@ -1,8 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let vel_km, vel_ms;
-        vel_km = prompt("Ingrese la velocidad del automóvil en km/h: ");
-        vel_ms = vel_km / 3.6;
-        alert("La velocidad del automóvil en m/s es: " + vel_ms);
+        let valor, desc, val_desc, pago_fin;
+        valor = Number(prompt("Ingrese el valor del medicamento: "));
+        desc = Number(prompt("Ingrese el porcentaje de descuento: "));
+        val_desc = (valor * desc) / 100;
+        pago_fin = (valor - val_desc);
+        alert("El descuento es de: $" + val_desc);
+        alert("El pago final es de: $" + pago_fin);
     }, 500);
 });
