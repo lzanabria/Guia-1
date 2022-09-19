@@ -1,10 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let a, b, c, expression;
-        a = Number(prompt("Ingrese el valor de a: "));
-        b = Number(prompt("Ingrese el valor de b: "));
-        c = Number(prompt("Ingrese el valor de c: "));
-        expresion = (a + 7 * c) / (b + 2 - a) + 2 * b;
-        alert("El resultado de la expresión (a+7*c)/(b+2-a)+2*b es: " + expresion);
+        let radio, altura, area, volumen;
+        radio=Number(prompt("Ingrese el radio del cilindro: "));
+        altura=Number(prompt("Ingrese la altura del cilindro: "));
+        area=(2*(Math.PI*radio**2))+((2*Math.PI*radio*altura)*altura);
+        volumen=(Math.PI*radio**2)*altura;
+        alert("El área del cilindro es: "+area);
+        alert("El volumen del cilindro es: "+volumen);
     }, 500);
 });
