@@ -1,11 +1,13 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let c1, c2, c3, c4, prom;
-        c1 = Number(prompt("Ingrese la nota 1: "));
-        c2 = Number(prompt("Ingrese la nota 2: "));
-        c3 = Number(prompt("Ingrese la nota 3: "));
-        c4 = Number(prompt("Ingrese la nota 4: "));
-        prom = (c1 + c2 + c3 + c4) / 4;
-        alert("El promedio de las calificaciones obtenidas es: " + prom);
+        let v1, v2, v3, comision, salario_total;
+        const salario = 1000000, comi = 0.10;
+        v1 = Number(prompt("Ingrese el valor de la venta 1: "));
+        v2 = Number(prompt("Ingrese el valor de la venta 2: "));
+        v3 = Number(prompt("Ingrese el valor de la venta 3: "));
+        comision = (v1 + v2 + v3) * comi;
+        salario_total = salario + comision;
+        alert("El valor de la comisión es: $"+comision
+        +"\nEl sueldo total es de: $"+salario_total);
     }, 500);
 }); 
