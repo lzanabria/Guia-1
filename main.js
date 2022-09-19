@@ -1,11 +1,10 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let a, b, c, ecua;
-        const x=19;
-        a=Number(prompt("Ingrese el valor de a: "));
-        b=Number(prompt("Ingrese el valor de b: "));
-        c=Number(prompt("Ingrese el valor de c: "));
-        ecua=a*x**2+b*x+c;
-        alert("El resultado de la ecuación a*x**2+b*x+c es: "+ecua);
+        let alto, ancho, largo, volumen;
+        alto = prompt("Ingrese el alto del elipsoide: ");
+        ancho = prompt("Ingrese el ancho del elipsoide: ");
+        largo = prompt("Ingrese el largo del elipsoide: ");
+        volumen = (4 / 3) * Math.PI * alto * ancho * largo;
+        alert("El volumen del elipsoide es: " + volumen);
     }, 500);
 });
