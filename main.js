@@ -1,14 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let nom_ape, h_trab, sueldo;
-        const pago_h=15300;
-
-        nom_ape = prompt("Ingrese su nombre y apellido: ");
-        h_trab=Number(prompt("Ingrese las horas trabajadas: "));
-        sueldo=h_trab*pago_h;
-        alert("Empleado: "+nom_ape
-            +"\nHoras trabjadas: "+h_trab
-            +"\nValor pago por hora: $"+pago_h
-            +"\nSueldo: $"+sueldo);
+        let c1, c2, c3, c4, prom;
+        c1 = Number(prompt("Ingrese la nota 1: "));
+        c2 = Number(prompt("Ingrese la nota 2: "));
+        c3 = Number(prompt("Ingrese la nota 3: "));
+        c4 = Number(prompt("Ingrese la nota 4: "));
+        prom = (c1 + c2 + c3 + c4) / 4;
+        alert("El promedio de las calificaciones obtenidas es: " + prom);
     }, 500);
 }); 
