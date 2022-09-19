@@ -1,18 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let nota1, nota2, nota3, exam_fin, trab_fin, prom_parc, prom_examf, prom_trabf, promf;
-        
-        nota1 = Number(prompt("Ingrese la nota del parcial 1: "));
-        nota2 = Number(prompt("Ingrese la nota del parcial 2: "));
-        nota3 = Number(prompt("Ingrese la nota del parcial 3: "));
-        exam_fin = Number(prompt("Ingrese la nota del examen final: "));
-        trab_fin = Number(prompt("Ingrese la nota del trabajo final: "));
-
-        prom_parc = ((nota1 + nota2 + nota3) / 3) * 0.55;
-        prom_examf = exam_fin * 0.30;
-        prom_trabf = trab_fin * 0.15;
-        promf = prom_parc + prom_examf + prom_trabf;
-
-        alert("El promedio final es: " + promf);
+        let porc_iva, val_prod, val_iva, val_total;
+        porc_iva = Number(prompt("Ingrese el porcentaje de IVA (sólo número): "));
+        val_prod = Number(prompt("Ingrese el valor del producto : $ "));
+        val_iva = val_prod * porc_iva / 100;
+        val_total = val_prod + val_iva;
+        alert("El valor del IVA de este producto es de: $"+val_iva);
+        alert("El valor total del producto es de: $"+val_total);
     }, 500);
 });
