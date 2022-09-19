@@ -1,8 +1,10 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let radio, volumen;
-        radio = Number(prompt("Ingrese el radio de la esfera: "));
-        volumen = (4 / 3) * Math.PI * Math.pow(radio, 3);
-        alert("El volumen de la esfera es: " + volumen);
+        let a, b, c, expression;
+        a = Number(prompt("Ingrese el valor de a: "));
+        b = Number(prompt("Ingrese el valor de b: "));
+        c = Number(prompt("Ingrese el valor de c: "));
+        expresion = (a + 7 * c) / (b + 2 - a) + 2 * b;
+        alert("El resultado de la expresión (a+7*c)/(b+2-a)+2*b es: " + expresion);
     }, 500);
 });
