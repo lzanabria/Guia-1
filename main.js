@@ -1,11 +1,8 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let valor, desc, val_desc, pago_fin;
-        valor = Number(prompt("Ingrese el valor del medicamento: "));
-        desc = Number(prompt("Ingrese el porcentaje de descuento: "));
-        val_desc = (valor * desc) / 100;
-        pago_fin = (valor - val_desc);
-        alert("El descuento es de: $" + val_desc);
-        alert("El pago final es de: $" + pago_fin);
+        let grad_c, conv;
+        grad_c=Number(prompt("Ingrese el valor de la temperatura en °C: "));
+        conv=(grad_c*9/5)+32;
+        alert("La temperatura convertida en °F es: "+conv);
     }, 500);
 });
