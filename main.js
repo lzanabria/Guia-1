@@ -1,13 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
-    let myfrom = document.querySelector("#myform");
-    myfrom.addEventListener("submit", (e) => {
-        e.preventDefault();
-        let myinput = new FormData(e.target);
-        let data = Object.fromEntries(myinput);
-        let rest = () => {
-            myfrom.reset();
-            return "";
-        }
-        document.querySelector("#res").value = (e.submitter.dataset.operacion == "calcular") ? eval(`${data.n1} ${data.operaciones} ${data.n2}`) : rest();
-    });
+    setTimeout(() => {
+        let base, altura, area;
+
+        base = Number(prompt("Ingrese la base del rectángulo: "));
+        altura = Number(prompt("Ingrese la altura del rectángulo: "));
+        area = base * altura;
+
+        alert("El área del rectángulo es: " + area)
+    }, e.timeStamp);
 });
