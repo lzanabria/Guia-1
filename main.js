@@ -1,10 +1,8 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let espacio, tiempo, velocidad, conv;
-        espacio=Number(prompt("Ingrese el espacio recorrido en Km: "));
-        tiempo=Number(prompt("Ingrese el tiempo en minutos: "));
-        velocidad=espacio/tiempo;
-        conv=velocidad*16.667;
-        alert("La velocidad del proyectil es de: "+conv+" m/s");
+        let radio, volumen;
+        radio = Number(prompt("Ingrese el radio de la esfera: "));
+        volumen = (4 / 3) * Math.PI * Math.pow(radio, 3);
+        alert("El volumen de la esfera es: " + volumen);
     }, 500);
 });
