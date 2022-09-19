@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="win">
+        <h1>OPERACIONES MATEMÁTICAS BÁSICAS</h1><br>
+        <form id="myform">
+            <select name="operaciones" id="ope" required>
+                <option value="+">Sumar</option>
+                <option value="-">Restar</option>
+                <option value="*">Multiplicar</option>
+                <option value="/">Dividir</option>
+            </select><br>
+            <input name="n1" spellcheck="false" placeholder="Ingrese un número" type="number" required><br>
+            <input name="n2" spellcheck="false" placeholder="Ingrese un número" type="number" required><br>
+            <input type="text" id="res" placeholder="Resultado" type="number" readonly>
+            <div id="bott">
+                <input class="btn" type="submit" data-operacion="calcular" value="Calcular">
+                <input class="btn" type="submit" data-operacion="limpiar" value="Limpiar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
