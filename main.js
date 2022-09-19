@@ -1,10 +1,10 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let radio, logitud, area;
-        radio=Number(prompt("Ingrese el radio del círculo: "));
-        longitud=2*Math.PI*radio;
-        area=Math.PI*(radio**2);
-        alert("La longitud del círculo es: "+longitud);
-        alert("El área del círculo es: "+area);
+        let espacio, tiempo, velocidad, conv;
+        espacio=Number(prompt("Ingrese el espacio recorrido en Km: "));
+        tiempo=Number(prompt("Ingrese el tiempo en minutos: "));
+        velocidad=espacio/tiempo;
+        conv=velocidad*16.667;
+        alert("La velocidad del proyectil es de: "+conv+" m/s");
     }, 500);
 });
