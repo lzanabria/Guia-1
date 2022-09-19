@@ -1,11 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let radio, altura, area, volumen;
-        radio=Number(prompt("Ingrese el radio del cilindro: "));
-        altura=Number(prompt("Ingrese la altura del cilindro: "));
-        area=(2*(Math.PI*radio**2))+((2*Math.PI*radio*altura)*altura);
-        volumen=(Math.PI*radio**2)*altura;
-        alert("El área del cilindro es: "+area);
-        alert("El volumen del cilindro es: "+volumen);
+        let a, b, c, ecua;
+        const x=19;
+        a=Number(prompt("Ingrese el valor de a: "));
+        b=Number(prompt("Ingrese el valor de b: "));
+        c=Number(prompt("Ingrese el valor de c: "));
+        ecua=a*x**2+b*x+c;
+        alert("El resultado de la ecuación a*x**2+b*x+c es: "+ecua);
     }, 500);
 });
