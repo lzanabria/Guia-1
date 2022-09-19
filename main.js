@@ -1,9 +1,10 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let base, altura, area;
-        base = prompt("Ingrese la base del triángulo: ");
-        altura = prompt("Ingrese la altura del triángulo: ");
-        area = (base * altura) / 2;
-        alert("El área del triángulo es: "+area);
+        let radio, logitud, area;
+        radio=Number(prompt("Ingrese el radio del círculo: "));
+        longitud=2*Math.PI*radio;
+        area=Math.PI*(radio**2);
+        alert("La longitud del círculo es: "+longitud);
+        alert("El área del círculo es: "+area);
     }, 500);
 });
