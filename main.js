@@ -1,10 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let alto, ancho, largo, volumen;
-        alto = prompt("Ingrese el alto del elipsoide: ");
-        ancho = prompt("Ingrese el ancho del elipsoide: ");
-        largo = prompt("Ingrese el largo del elipsoide: ");
-        volumen = (4 / 3) * Math.PI * alto * ancho * largo;
-        alert("El volumen del elipsoide es: " + volumen);
+        let min, val, iva, imp, pago;
+        min=Number(prompt("Ingrese el tiempo de la llamada en minutos: "));
+        val=Number(prompt("Ingrese el valor por minuto: "));
+        iva=Number(prompt("Ingrese el valor del IVA: "));
+        imp=val*iva/100;
+        pago=val+imp;
+        alert("El valor de la llamada es de : $"+pago);
     }, 500);
 });
