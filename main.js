@@ -1,11 +1,11 @@
 addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
-        let base, altura, area;
-
-        base = Number(prompt("Ingrese la base del rectángulo: "));
-        altura = Number(prompt("Ingrese la altura del rectángulo: "));
-        area = base * altura;
-
-        alert("El área del rectángulo es: " + area)
-    }, e.timeStamp);
+        let n1, n2, n3, n4, media;
+        n1=Number(prompt("Ingrese el valor del número 1: "));
+        n2=Number(prompt("Ingrese el valor del número 2: "));
+        n3=Number(prompt("Ingrese el valor del número 3: "));
+        n4=Number(prompt("Ingrese el valor del número 4: "));
+        media=(n1+n2+n3+n4)/4;
+        alert("La media de los números es: "+media);
+    }, 500);
 });
